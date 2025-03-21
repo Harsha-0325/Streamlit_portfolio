@@ -162,6 +162,8 @@ st.markdown("""
     color: #ede8e8;
     padding: 20px;
     border-radius: 12px;
+    width: auto;   /* Fixed box width */
+    height: auto;  /* Fixed box height */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     font-size: 18px !important; /* Ensure base font size applies */
     display: flex;
