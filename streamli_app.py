@@ -643,7 +643,7 @@ st.markdown("""
             width: 170px; /* Adjust logo size */
             height: auto;
             margin-bottom: 10px;
-            margin-right:67%;
+            margin-right:auto;
         }
         .cer_details {
             display: flex;
@@ -728,7 +728,7 @@ st.markdown(f"""
             width: 180px; /* Adjust logo size */
             height: auto;
             margin-bottom: 10px;
-            margin-right:70%;
+            margin-right:auto;
         }}
         .cer_details_1 {{
             display: flex;
@@ -810,7 +810,7 @@ st.markdown(f"""
             width: 170px; /* Adjust logo size */
             height: auto;
             margin-bottom: 10px;
-            margin-right:71%;
+            margin-right:auto;
         }}
         .cer_details_2 {{
             display: flex;
