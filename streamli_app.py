@@ -3,10 +3,22 @@ import streamlit as st
 import base64
 import streamlit.components.v1 as components
 
-with open("assets/google_analytics.html", "r") as f:
-    html_code = f.read()
 
-components.html(html_code, height=0)
+
+GA_TRACKING_CODE = """
+        <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTBLQ01E39"></script>
+                <script>
+                 window.dataLayer = window.dataLayer || [];
+                 function gtag(){dataLayer.push(arguments);}
+                 gtag('js', new Date());
+                
+                 gtag('config', 'G-MTBLQ01E39');
+                </script>
+        """
+
+# Inject the Google Analytics script
+components.html(GA_TRACKING_CODE, height=0, width=0)
 
 # background
 
