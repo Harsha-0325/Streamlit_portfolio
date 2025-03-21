@@ -295,6 +295,7 @@ st.markdown("<h2>My Skills</h2>",unsafe_allow_html=True)
 for i in range(2):
     st.markdown('<br>',unsafe_allow_html=True)
 st.image('https://raw.githubusercontent.com/Harsha-0325/Streamlit_portfolio/main/skills_2.png',  use_container_width=True)
+st.image('assets/skills_2.png',  use_container_width=True)
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------
 for i in range(4):
     st.markdown('<br>',unsafe_allow_html=True)
