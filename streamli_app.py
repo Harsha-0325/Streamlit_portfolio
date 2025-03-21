@@ -61,7 +61,7 @@ st.write('I\'m a data professional with expertise in data analytics, data engine
 st.markdown("""
         <style>
         .five_year_old {
-            margin-left: 43%;  /* Adjust the percentage to control left alignment */
+            margin-left: 0%;  /* Adjust the percentage to control left alignment */
             text-align: right;
             font-style: italic;
         }
