@@ -176,8 +176,8 @@ st.markdown("""
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 340px;   /* Fixed box width */
-    height: 220px;  /* Fixed box height */
+    width: auto;   /* Fixed box width */
+    height: auto;
     font-size: 18px !important; /* Ensure base font size applies */
     display: flex;
     flex-direction: column;
