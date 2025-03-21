@@ -914,17 +914,16 @@ st.markdown("""
 
 #count
 
-import streamlit as st
+ga_script = """
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MTBLQ01E39"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MTBLQ01E39');
+</script>
+"""
 
-# Insert Google Analytics script
-st.markdown("""
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTBLQ01E39"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-MTBLQ01E39');
-    </script>
-""", unsafe_allow_html=True)
+# Use Streamlit's HTML component to ensure the script runs properly
+st.components.v1.html(ga_script, height=0)
 
