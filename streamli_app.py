@@ -294,7 +294,7 @@ st.markdown("<h2>My Skills</h2>",unsafe_allow_html=True)
 
 for i in range(2):
     st.markdown('<br>',unsafe_allow_html=True)
-st.image('https://raw.githubusercontent.com/Harsha-0325/Streamlit_portfolio/main/skills_2.png',  use_container_width=True)
+# st.image('https://raw.githubusercontent.com/Harsha-0325/Streamlit_portfolio/main/skills_2.png',  use_container_width=True)
 st.image('assets/skills_2.png',  use_container_width=True)
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------
 for i in range(4):
@@ -346,7 +346,7 @@ for i in range(2):
 
 st.markdown("<p>The workflow image👀</p>",unsafe_allow_html=True)   
 # # Display Flowchart Image
-st.image(r"C:\Users\GurralaH\OneDrive - Broadridge Financial Solutions, Inc\Desktop\my_files\pro1_flowchart.png",  use_container_width=True)
+st.image('assets/pro1_flowchart.png',  use_container_width=True)
 
 for i in range(2):
     st.markdown('<br>',unsafe_allow_html=True)
@@ -707,7 +707,7 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # Encode the local image (Make sure the image file is in the same directory or provide the full path)
-image_base64_1 = get_base64_image("hackerranlogo.jpg")
+image_base64_1 = get_base64_image('assets/hackerranlogo.jpg')
 
 # Render HTML with Base64-embedded image
 st.markdown(f"""
@@ -789,7 +789,7 @@ for i in range(2):
 
 # coursera
 
-image_base64_2 = get_base64_image("coursera logo.png")
+image_base64_2 = get_base64_image('assets/coursera logo.png')
 
 # Render HTML with Base64-embedded image
 st.markdown(f"""
