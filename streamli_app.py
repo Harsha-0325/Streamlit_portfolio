@@ -914,27 +914,17 @@ st.markdown("""
 
 #count
 
-import os
+import streamlit as st
 
-# File to store visitor count
-counter_file = "visits.txt"
-
-# Initialize visitor count
-if not os.path.exists(counter_file):
-    with open(counter_file, "w") as f:
-        f.write("0")
-
-# Read current count
-with open(counter_file, "r") as f:
-    count = int(f.read())
-
-# Use session state to track if the user has already been counted
-if "visited" not in st.session_state:
-    st.session_state["visited"] = True  # Mark user as visited
-    count += 1  # Increase count only if it's a new session
-
-    # Save updated count
-    with open(counter_file, "w") as f:
-        f.write(str(count))
-
+# Insert Google Analytics script
+st.markdown("""
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTBLQ01E39"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MTBLQ01E39');
+    </script>
+""", unsafe_allow_html=True)
 
