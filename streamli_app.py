@@ -635,7 +635,7 @@ st.markdown("""
             border: 2px solid ;
             border-radius: 15px;
             padding: 20px;
-            width: 640px;
+            width: auto;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
@@ -720,7 +720,7 @@ st.markdown(f"""
             border: 2px solid;
             border-radius: 15px;
             padding: 20px;
-            width: 640px;
+            width: auto;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }}
@@ -802,7 +802,7 @@ st.markdown(f"""
             border: 2px solid;
             border-radius: 15px;
             padding: 20px;
-            width: 640px;
+            width: auto;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }}
