@@ -5,20 +5,18 @@ import streamlit.components.v1 as components
 
 
 
-GA_TRACKING_CODE = """
-        <!-- Google tag (gtag.js) -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTBLQ01E39"></script>
-                <script>
-                 window.dataLayer = window.dataLayer || [];
-                 function gtag(){dataLayer.push(arguments);}
-                 gtag('js', new Date());
-                
-                 gtag('config', 'G-MTBLQ01E39');
-                </script>
-        """
+GA_JS = """
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MTBLQ01E39"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MTBLQ01E39');
+</script>
+"""
 
-# Inject the Google Analytics script
-components.html(GA_TRACKING_CODE, height=0, width=0)
+# 🔹 Inject GA script using Streamlit components
+st.components.v1.html(GA_JS, height=0)  
 
 # background
 
