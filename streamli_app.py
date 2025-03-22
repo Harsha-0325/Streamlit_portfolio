@@ -12,12 +12,16 @@ GA_JS = """
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-MTBLQ01E39');
+  console.log("Google Analytics Loaded!"); // Debugging message
 </script>
 """
 
-# 🔹 Inject GA script using Streamlit components
-st.components.v1.html(GA_JS, height=0)  
+# Injecting GA script
+st.components.v1.html(GA_JS, height=0)
 
+# Normal app content
+st.title("Welcome to My Portfolio 🚀")
+st.write("Google Analytics is now integrated! Check your GA dashboard for real-time data.")
 # background
 
 # import streamlit as st
