@@ -20,8 +20,6 @@ GA_JS = """
 st.components.v1.html(GA_JS, height=0)
 
 # Normal app content
-st.title("Welcome to My Portfolio 🚀")
-st.write("Google Analytics is now integrated! Check your GA dashboard for real-time data.")
 # background
 
 # import streamlit as st
