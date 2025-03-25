@@ -884,7 +884,7 @@ for i in range(2):
     st.markdown('<br>',unsafe_allow_html=True)
 
 st.markdown("""<div class = 'five_year_old'>
-            <p>for 5 year old:</p><p>"i have done there many - REALLY !! I DID😁"</p>
+            <p>for 5 year old:</p><p>"I have done many there - REALLY !! I DID😁"</p>
             </div>""",unsafe_allow_html=True)
 
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------
