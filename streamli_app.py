@@ -278,7 +278,7 @@ st.markdown("<h2>My Skills</h2>",unsafe_allow_html=True)
 for i in range(2):
     st.markdown('<br>',unsafe_allow_html=True)
 # st.image('https://raw.githubusercontent.com/Harsha-0325/Streamlit_portfolio/main/skills_2.png',  use_container_width=True)
-snowflake_logo = get_base64_image('assets/SNOW.png)
+snowflake_logo = get_base64_image('assets/SNOW.png')
 st.markdown(f"""
     <style>
         .skills-container {{
