@@ -223,99 +223,188 @@ st.markdown("<h2>Experience</h2>",unsafe_allow_html=True)
 # </style>
 # """, unsafe_allow_html=True)
 
-st.markdown("""
-<div class="experience-container">
-    <!-- Experience 1 -->
-    <div class="experience-card_1">
-        <p class="company-name_1">Broadridge</p>
-        <p class="role">Trainee</p>
-        <p class  ='skills'>Power BI, SQL Server, PostgreSQL</p>
-    </div>
-</div>
-     <br>       
-<div class="experience-container">
-    <!-- Experience 2 -->
-    <div class="experience-card_2">
-        <p class="company-name">SimplyFI Softtech</p>
-        <p class="role">Python Developer Intern</p>
-        <p class = 'skills'>Python, OCR</p>
-    </div>  
-</div>
+# st.markdown("""
+# <div class="experience-container">
+#     <!-- Experience 1 -->
+#     <div class="experience-card_1">
+#         <p class="company-name_1">Broadridge</p>
+#         <p class="role">Trainee</p>
+#         <p class  ='skills'>Power BI, SQL Server, PostgreSQL</p>
+#     </div>
+# </div>
+#      <br>       
+# <div class="experience-container">
+#     <!-- Experience 2 -->
+#     <div class="experience-card_2">
+#         <p class="company-name">SimplyFI Softtech</p>
+#         <p class="role">Python Developer Intern</p>
+#         <p class = 'skills'>Python, OCR</p>
+#     </div>  
+# </div>
           
         
 
+# """, unsafe_allow_html=True)
+
+# st.markdown("""
+# <style>
+# .experience-container {
+#     display: flex;
+#     justify-content: left;
+#     align-items: flex-start;
+#     gap: 20px;
+#     margin-top: 20px;
+# }
+
+# .experience-card_1 {
+#     background-color: #0e1117;
+#     color: #9ac9d9;
+#     padding: 20px;
+#     border-radius: 12px;
+#     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+#     width: 400px;   /* Fixed box width */
+#     height: 180px;  /* Fixed box height */
+#     font-size: 20px !important; /* Ensure base font size applies */
+#     display: flex;
+#     flex-direction: column;
+#     -webkit-box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+#     box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+# }
+            
+# .experience-card_2 {
+#     background-color: #0e1117;
+#     color: #aeeace;
+#     padding: 20px;
+#     border-radius: 12px;
+#     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+#     width: 400px;   /* Fixed box width */
+#     height: 180px;
+#     font-size: 20px !important; /* Ensure base font size applies */
+#     display: flex;
+#     flex-direction: column;
+#     -webkit-box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+#     box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+
+# }
+
+# .company-name {
+#     font-weight: bold;
+#     color: #aeeace;
+#     font-size: 26px !important; /* Forced larger font size for company name */
+# }
+            
+# .company-name_1 {
+#     font-weight: bold;
+#     color: #9ac9d9;
+#     font-size: 26px !important; /* Forced larger font size for company name */
+# }
+
+
+# .role {
+#     font-style: italic;
+#     font-size: 22px !important; /* Slightly larger for role */
+#     text-align: end;
+# }
+            
+# </style>
+# """, unsafe_allow_html=True)
+
+
+# for i in range(2):
+#     st.markdown('<br>',unsafe_allow_html=True)
+
+# st.markdown("""<div class = 'five_year_old'>
+#             <p>for 5 year old:</p><p>"i did my first job, now doing second😁"</p>
+#             </div>""",unsafe_allow_html=True)
+
+
+st.markdown("""
+<div class="experience-container_1">
+    <!-- Experience 1 -->
+    <div class="experience-card_1">
+        <p><span class="company-name_1">Broadridge</span> - <span class="role_1">Trainee</span></p>
+        <p class = 'info_'>Working on <span class = 'sid'>Power BI</span> reports and dashboards, writing SQL queries in <span class = 'sid'>SQL Server</span> and <span class = 'sid'>PostgreSQL</span> for data analysis, and assisting in maintaining the Geneos monitoring tool for system stability and performance.</p>
+    </div>
+</div>
+
+<div class="experience-container_2">
+    <!-- Experience 2 -->
+    <div class="experience-card_2">
+        <p><span class="company-name_2">SimplyFI Softtech</span> - <span class="role_2">Python Developer Intern</span></p>
+        <p class = 'info_'>Worked on <span class = 'sid'>OCR</span> applications using OpenCV, PyTesseract, and PaddleOCR to extract structured data from bank documents, improving accuracy and efficiency.</p>
+    </div>
+</div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
 <style>
-.experience-container {
+.experience-container_1 {
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    gap: 20px;
+    margin-top: 20px;
+}
+
+.experience-container_2 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
     margin-top: 20px;
 }
 
 .experience-card_1 {
     background-color: #0e1117;
-    color: #9ac9d9;
+    color: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 400px;   /* Fixed box width */
-    height: 180px;  /* Fixed box height */
-    font-size: 20px !important; /* Ensure base font size applies */
-    display: flex;
-    flex-direction: column;
-    -webkit-box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+    width: auto;  
+    font-size: auto; 
     box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
 }
-            
+
 .experience-card_2 {
     background-color: #0e1117;
-    color: #aeeace;
+    color: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 400px;   /* Fixed box width */
-    height: 180px;
-    font-size: 20px !important; /* Ensure base font size applies */
-    display: flex;
-    flex-direction: column;
-    -webkit-box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+    width: auto;  
+    font-size: auto; 
     box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
-
 }
-
-.company-name {
-    font-weight: bold;
-    color: #aeeace;
-    font-size: 26px !important; /* Forced larger font size for company name */
-}
-            
 .company-name_1 {
     font-weight: bold;
     color: #9ac9d9;
-    font-size: 26px !important; /* Forced larger font size for company name */
-}
-
-
-.role {
-    font-style: italic;
-    font-size: 22px !important; /* Slightly larger for role */
-    text-align: end;
+    font-size: 24px;
 }
             
+.company-name_2 {
+    font-weight: bold;
+    color: #aeeace;
+    font-size: 24px;
+}
+
+
+.role_1 {
+    font-style: italic;
+    font-size: 22px;
+    color: #9ac9d9;
+}
+            
+.role_2 {
+    font-style: italic;
+    font-size: 22px;
+    color: #aeeace;
+}
+
+.sid{
+    font-style:italic;
+    color:#ffbf80
+}
+.info_{
+
+}
 </style>
 """, unsafe_allow_html=True)
-
-
-for i in range(2):
-    st.markdown('<br>',unsafe_allow_html=True)
-
-st.markdown("""<div class = 'five_year_old'>
-            <p>for 5 year old:</p><p>"i did my first job, now doing second😁"</p>
-            </div>""",unsafe_allow_html=True)
 
 
 
