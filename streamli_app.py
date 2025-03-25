@@ -278,7 +278,116 @@ st.markdown("<h2>My Skills</h2>",unsafe_allow_html=True)
 for i in range(2):
     st.markdown('<br>',unsafe_allow_html=True)
 # st.image('https://raw.githubusercontent.com/Harsha-0325/Streamlit_portfolio/main/skills_2.png',  use_container_width=True)
-st.image('assets/skills_2.png',  use_container_width=True)
+snowflake_logo = get_base64_image('assets/SNOW.png)
+st.markdown(f"""
+    <style>
+        .skills-container {{
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap onto the next line */
+            gap: 20px; /* Space between skill cards */
+            justify-content: center; /* Center align */
+        }}
+
+        .skill-card {{
+            display: flex;
+            align-items: center;
+            background: #0e1117; /* Change this to your preferred color */
+            padding: 8px 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            font-family: Arial, sans-serif;
+            box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+        }}
+
+        .skill-card img {{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }}
+
+        .skill-name {{
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }}
+    </style>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="https://img.icons8.com/color/48/microsoft-sql-server.png" alt="SQL Server"/>
+            <span class="skill-name">SQL Server</span>
+        </div>
+        <div class="skill-card">
+            <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="MySQL"/>
+            <span class="skill-name">MySQL</span>
+        </div>
+        <div class="skill-card">
+            <img src="https://img.icons8.com/color/48/database.png" alt="DBMS"/>
+            <span class="skill-name">DBMS</span>
+        </div>
+        <div class="skill-card">
+            <img src="https://img.icons8.com/color/48/postgreesql.png" alt="PostgreSQL"/>
+            <span class="skill-name">PostgreSQL</span>
+        </div>
+        <div class="skill-card">
+            <img src="https://img.icons8.com/color/48/web-scraper.png" alt="Web Scraping"/>
+            <span class="skill-name">Web Scraping</span>
+        </div>
+        <!-- New category starts here -->
+        <div class="skill-card">
+            <img src="https://img.icons8.com/color/48/python.png" alt="Python"/>
+            <span class="skill-name">Python</span>
+        </div>
+        <div class="skill-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" alt="R"/>
+            <span class="skill-name">R</span>
+        </div>
+        <div class="skill-card">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/analytics.png" alt="analytics"/>
+            <span class="skill-name">Data Analysis</span>
+        </div>
+        <div class="skill-card">
+           <img width="48" height="48" src="https://img.icons8.com/color/48/brain-3.png" alt="brain-3"/>
+            <span class="skill-name">Data Science</span>
+        </div>
+        <div class="skill-card">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/microsoft-word-2019--v2.png" alt="microsoft-word-2019--v2"/>
+            <span class="skill-name">MS-Word</span>
+        </div>
+        <div class="skill-card">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="artificial-intelligence"/>
+            <span class="skill-name">Machine Learning</span>
+        </div>
+               <div class="skill-card">
+            <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI"/>
+            <span class="skill-name">Power BI</span>
+        </div>
+        <div class="skill-card">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="microsoft-excel-2019--v1"/>
+            <span class="skill-name">MS-Excel</span>
+        </div>
+        <div class="skill-card">
+           <img width="48" height="48" src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
+            <span class="skill-name">VS Code</span>
+        </div>
+        <div class="skill-card">
+           <img width="48" height="48" src="https://img.icons8.com/color/48/streamlit.png" alt="streamlit"/>
+            <span class="skill-name">Streamlit</span>
+        </div>
+        <div class="skill-card">
+          <img src="data:image/jpg;base64,{snowflake_logo}" alt="Snowflake Logo"/>
+            <span class="skill-name">Snowflake</span>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+
+
+for i in range(2):
+    st.markdown('<br>',unsafe_allow_html=True)
+
+
+
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------
 for i in range(4):
     st.markdown('<br>',unsafe_allow_html=True)
