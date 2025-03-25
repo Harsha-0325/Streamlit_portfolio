@@ -99,7 +99,7 @@ for i in range(4):
 # experience
 
 
-st.markdown("<h2>Experience</h2>",unsafe_allow_html=True)
+st.markdown("<h2>Internships & Experience</h2>",unsafe_allow_html=True)
 
 st.markdown("""
 <div class="experience-container_1">
