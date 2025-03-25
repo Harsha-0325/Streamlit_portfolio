@@ -145,22 +145,103 @@ st.markdown("<h2>Experience</h2>",unsafe_allow_html=True)
 # </style>
 # """, unsafe_allow_html=True)
 
+# st.markdown("""
+# <div class="experience-container">
+#     <!-- Experience 1 -->
+#     <div class="experience-card_1">
+#         <p class="company-name_1">Broadridge</p>
+#         <p class="role">Role: Trainee</p>
+#         <p>Duration: Jan 2025 - Present</p>
+#         <p class  ='skills'>Skills: Power BI, SQL Server, PostgreSQL</p>
+#     </div>
+#     <div class="experience-card_2">
+#         <p class="company-name">SimplyFI Softtech</p>
+#         <p class="role">Role: Python Developer Intern</p>
+#         <p class = 'duration'>Duration: Sep 2024 - Dec2024</p>
+#         <p class = 'skills'>Skills: Python, OCR</p>
+#     </div>  
+# </div>
+        
+
+# """, unsafe_allow_html=True)
+
+# st.markdown("""
+# <style>
+# .experience-container {
+#     display: flex;
+#     justify-content: left;
+#     align-items: flex-start;
+#     gap: 20px;
+#     margin-top: 20px;
+# }
+
+# .experience-card_1 {
+#     background-color: #00568f;
+#     color: #ede8e8;
+#     padding: 20px;
+#     border-radius: 12px;
+#     width: auto;   /* Fixed box width */
+#     height: auto;  /* Fixed box height */
+#     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+#     font-size: 18px !important; /* Ensure base font size applies */
+#     display: flex;
+#     flex-direction: column;
+# }
+            
+# .experience-card_2 {
+#     background-color: #76ffa5;
+#     color: #26233b;
+#     padding: 20px;
+#     border-radius: 12px;
+#     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+#     width: auto;   /* Fixed box width */
+#     height: auto;
+#     font-size: 18px !important; /* Ensure base font size applies */
+#     display: flex;
+#     flex-direction: column;
+
+# }
+
+# .company-name {
+#     font-weight: bold;
+#     color: #032500;
+#     font-size: 20px !important; /* Forced larger font size for company name */
+# }
+            
+# .company-name_1 {
+#     font-weight: bold;
+#     color: #ede8e8;
+#     font-size: 20px !important; /* Forced larger font size for company name */
+# }
+
+
+# .role {
+#     font-style: italic;
+#     font-size: 18px !important; /* Slightly larger for role */
+# }
+            
+# </style>
+# """, unsafe_allow_html=True)
+
 st.markdown("""
 <div class="experience-container">
     <!-- Experience 1 -->
     <div class="experience-card_1">
         <p class="company-name_1">Broadridge</p>
-        <p class="role">Role: Trainee</p>
-        <p>Duration: Jan 2025 - Present</p>
-        <p class  ='skills'>Skills: Power BI, SQL Server, PostgreSQL</p>
+        <p class="role">Trainee</p>
+        <p class  ='skills'>Power BI, SQL Server, PostgreSQL</p>
     </div>
+</div>
+     <br>       
+<div class="experience-container">
+    <!-- Experience 2 -->
     <div class="experience-card_2">
         <p class="company-name">SimplyFI Softtech</p>
-        <p class="role">Role: Python Developer Intern</p>
-        <p class = 'duration'>Duration: Sep 2024 - Dec2024</p>
-        <p class = 'skills'>Skills: Python, OCR</p>
+        <p class="role">Python Developer Intern</p>
+        <p class = 'skills'>Python, OCR</p>
     </div>  
 </div>
+          
         
 
 """, unsafe_allow_html=True)
@@ -176,52 +257,58 @@ st.markdown("""
 }
 
 .experience-card_1 {
-    background-color: #00568f;
-    color: #ede8e8;
+    background-color: #0e1117;
+    color: #9ac9d9;
     padding: 20px;
     border-radius: 12px;
-    width: auto;   /* Fixed box width */
-    height: auto;  /* Fixed box height */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    font-size: 18px !important; /* Ensure base font size applies */
+    width: 400px;   /* Fixed box width */
+    height: 180px;  /* Fixed box height */
+    font-size: 20px !important; /* Ensure base font size applies */
     display: flex;
     flex-direction: column;
+    -webkit-box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+    box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
 }
             
 .experience-card_2 {
-    background-color: #76ffa5;
-    color: #26233b;
+    background-color: #0e1117;
+    color: #aeeace;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: auto;   /* Fixed box width */
-    height: auto;
-    font-size: 18px !important; /* Ensure base font size applies */
+    width: 400px;   /* Fixed box width */
+    height: 180px;
+    font-size: 20px !important; /* Ensure base font size applies */
     display: flex;
     flex-direction: column;
+    -webkit-box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
+    box-shadow: 5px 5px 15px #1a1a1a, -5px -5px 15px #242424;
 
 }
 
 .company-name {
     font-weight: bold;
-    color: #032500;
-    font-size: 20px !important; /* Forced larger font size for company name */
+    color: #aeeace;
+    font-size: 26px !important; /* Forced larger font size for company name */
 }
             
 .company-name_1 {
     font-weight: bold;
-    color: #ede8e8;
-    font-size: 20px !important; /* Forced larger font size for company name */
+    color: #9ac9d9;
+    font-size: 26px !important; /* Forced larger font size for company name */
 }
 
 
 .role {
     font-style: italic;
-    font-size: 18px !important; /* Slightly larger for role */
+    font-size: 22px !important; /* Slightly larger for role */
+    text-align: end;
 }
             
 </style>
 """, unsafe_allow_html=True)
+
 
 for i in range(2):
     st.markdown('<br>',unsafe_allow_html=True)
