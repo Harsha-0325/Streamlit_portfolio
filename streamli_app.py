@@ -307,7 +307,7 @@ st.markdown(f"""
         }}
 
         .skill-name {{
-            font-size: 20px;
+            font-size: 17px;
             font-weight: bold;
             color: white;
         }}
