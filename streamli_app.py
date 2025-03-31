@@ -783,6 +783,10 @@ st.markdown("""
                 <span class="cer_name">Data Application Builders Workshop</span>
                 <span><a class="link" href="https://achieve.snowflake.com/a20549fd-51b2-443c-ae92-fede83af51c3#acc.ge1EwxNT" target="_blank">View Certificate</a></span>
             </div>
+             <div class="cer_row">
+                <span class="cer_name">Data Lake Workshop</span>
+                <span><a class="link" href="https://achieve.snowflake.com/6ce622aa-0a9a-4ceb-8197-3743f6c07253#acc.Y1wsGg7U" target="_blank">View Certificate</a></span>
+            </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
