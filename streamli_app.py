@@ -789,7 +789,7 @@ st.markdown("""
             </div>
              <div class="cer_row">
                 <span class="cer_name">Data Engineering Workshop</span>
-                <span><a class="link" href="https://achieve.snowflake.com/176cd448-3b83-4a33-bb32-be84cbfb98d8#acc.gzT27cjk" target="_blank">View Certificate</a></span>
+                <span><a class="link" href="https://achieve.snowflake.com/176cd448-3b83-4a33-bb32-be84cbfb98d8#acc.WUvLj90I" target="_blank">View Certificate</a></span>
             </div>
         </div>
     </div>
